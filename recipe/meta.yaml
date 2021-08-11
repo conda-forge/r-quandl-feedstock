@@ -1,4 +1,4 @@
-{% set version = '2.10.0' %}
+{% set version = "2.11.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Quandl_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Quandl/Quandl_{{ version }}.tar.gz
-  sha256: 1956d51079ffceacd376b793b43c6f89753f87cfc5f89173605b0c9c0284834f
+  sha256: ba17072f9313678715975652f90819fdada530f00c83ca91af00b34597514baf
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -44,14 +44,11 @@ test:
 about:
   home: https://github.com/quandl/quandl-r
   license: MIT
-  summary: Functions for interacting directly with the Quandl API to offer data in a number of
-    formats usable in R, downloading a zip with all data from a Quandl database, and
-    the ability to search. This R package uses the Quandl API. For more information
-    go to <https://www.quandl.com/docs/api>. For more help on the package itself go
-    to <https://www.quandl.com/help/r>.
+  summary: Functions for interacting directly with the Quandl API to offer data in a number of formats usable in R, downloading a zip with all data from a Quandl database, and the ability to search. This R package uses the Quandl API. For more information go to <https://www.quandl.com/docs/api>. For more help on the package
+    itself go to <https://www.quandl.com/help/r>.
   license_family: MIT
-  license_file: 
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 extra:
   recipe-maintainers:
