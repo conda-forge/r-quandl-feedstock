@@ -1,11 +1,11 @@
-About r-quandl
-==============
+About r-quandl-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-quandl-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/quandl/quandl-r
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-quandl-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions for interacting directly with the Quandl API to offer data in a number of formats usable in R, downloading a zip with all data from a Quandl database, and the ability to search. This R package uses the Quandl API. For more information go to <https://www.quandl.com/docs/api>. For more help on the package itself go to <https://www.quandl.com/help/r>.
 
